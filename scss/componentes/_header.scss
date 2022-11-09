@@ -1,0 +1,50 @@
+.headercolor {
+	background-color: $background-color_1;
+}
+.header {
+	@extend %display;
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+}
+.header__logo {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 50px;
+}
+.header__link {
+	text-transform: uppercase;
+	margin: 0 1rem;
+	text-decoration: none;
+	align-self: center;
+	font-size: 14px;
+	font-weight: 400;
+	white-space: nowrap;
+	color: $color_1;
+	font-family: $font-family_1;
+	&:hover {
+		color: $color_2;
+		transition: color .0s linear;
+		font-family: $font-family_1;
+		text-decoration: none;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 1px) {
+	.header {
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width: 670px) and (min-width: 1px) {
+	.header {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media screen and (max-width: 450px) and (min-width: 1px) {
+	.header {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

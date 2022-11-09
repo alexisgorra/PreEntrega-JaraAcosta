@@ -1,0 +1,118 @@
+.footer-phone {
+	background-color: $background-color_2;
+	padding-top: 100px;
+}
+.footer-phone__logo {
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+	position: absolute;
+	right: 0;
+}
+.footer-phone__contactos {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+	font-size: 14px;
+	margin-bottom: 140px;
+	font-family: $font-family_1;
+}
+.footer-phone__contactos-contacto {
+	width: 25%;
+}
+.footer-phone__titulo-redes {
+	margin-bottom: 28px;
+	font-family: $font-family_2;
+	font-size: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.footer-phone__title {
+	margin-bottom: 28px;
+	font-family: $font-family_2;
+	font-size: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.footer-phone__contacto-redes {
+	width: 25%;
+}
+.footer-phone__item__facebook {
+	margin-bottom: 10px;
+	color: $color_2;
+	font-family: $font-family_1;
+	text-decoration: none;
+}
+.footer-phone__item__numero {
+	margin-bottom: 10px;
+	color: $color_2;
+	font-family: $font-family_1;
+}
+.footer-phone__links {
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12px;
+	padding-bottom: 6px;
+	align-items: center;
+	a {
+		color: $color_3;
+		margin-right: 5px;
+		&:first-of-type {
+			margin-left: auto;
+		}
+	}
+}
+.footer-phone__links--linea {
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+	display: flex;
+	font-weight: 300;
+	justify-content: flex-end;
+	padding-bottom: 60px;
+	font-family: $font-family_1;
+	a {
+		margin-left: 10px;
+	}
+}
+.footer-phone__copyrights {
+	text-transform: uppercase;
+	align-self: flex-start;
+}
+h4 {
+	color: $color_3;
+	margin-right: 5px;
+}
+a {
+	text-decoration: none;
+	text-decoration: none;
+}
+@media screen and (max-width: 670px) and (min-width: 1px) {
+	.footer-phone__logo {
+		display: none;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.footer-phone__contactos {
+		padding-left: 40px;
+	}
+	.footer-phone__contactos-contacto {
+		width: 50%;
+	}
+	.footer-phone__contactos-redes {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 450px) and (min-width: 1px) {
+	.footer-phone__logo {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.footer-phone__contactos {
+		padding-left: 10px;
+	}
+}

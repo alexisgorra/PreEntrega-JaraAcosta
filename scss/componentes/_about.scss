@@ -1,0 +1,201 @@
+.pagina-about{
+    width: 100%;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.ab-essentials{ 
+    border-top: 0;
+    padding: 22px 0;
+    text-align: center;
+    position: relative;
+    background-color: $background-color_1;
+}
+.ab-essentials__text{
+    display: inline-block;
+    width: 100%;
+    max-width: 640px;
+    color: $color_4;
+    font-family: 'Hypatia-Sans-Pro', sans-serif;
+    font-size: 114px;
+    text-transform: uppercase;
+    line-height: 85px;
+}
+.ab-essentials__image{
+    width: 300px;
+    height: 2507px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ab-heisenberg{
+    border-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 840px;
+    background-color: $background-color_6;
+}
+.ab-heisenberg__image{
+    flex-basis: 50%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+.ab-heisenberg__text{
+    flex-basis: 40%;
+    max-width: 340px;
+    padding-right: 20px;
+    padding-top: 30px;
+    margin-right: 10vw;
+}
+.ab-heisenberg__text-contenido{
+    font-family: 'Hypatia-Sans-Pro', sans-serif;
+    vertical-align: baseline;
+    font-weight: 300;
+    line-height: 1.8;
+    transition: opacity .7s linear,transform .3s linear;
+    opacity: 0;
+}
+.ab-heisenberg__text-titulo{
+    text-transform: uppercase;
+    font-size: 58px;
+    font-family: 'BazaART','Hypatia-Sans-Pro', sans-serif;
+    color: $color_4;
+    margin: 70px 0 30px 0;
+    transition: opacity .7s linear,transform .3s linear;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.ab-pronto{
+    background-color: $background-color_3;
+    background-image: url("../img/fondodeabout.png");
+    background-repeat: repeat;
+    height: 760px;
+    padding: 190px 0;
+    display: flex;
+}
+.ab-pronto__image{
+    flex-basis: 50%;
+    background-image: url("../img/pronto-0002.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 550px;
+}
+.ab-pronto__text{
+    padding-right: 10vw;
+    flex-basis: 50%
+}
+.ab-pronto__text-contenido{
+    font-family: 'Hypatia-Sans-Pro', sans-serif;
+    vertical-align: baseline;
+    color: $color_5;
+    font-weight: 300;
+    line-height: 1.8;
+    transition: opacity .7s linear,transform .3s linear;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.ab-pronto__text-titulo{
+    color: $color_6;
+	@extend %font;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: .9;
+    transition: opacity .7s linear,transform .3s linear;
+    opacity: 1;
+}
+@media (max-width: 450px) and (min-width: 1px) {
+	.ab-essentials {
+		padding: 30px 0;
+	}
+	.ab-essentials__text {
+		font-size: calc(100vw/5.7);
+		line-height: 57px;
+		max-width: 100%;
+	}
+	.ab-essentials__image {
+		width: 180px;
+		height: 240px;
+	}
+	.ab-pronto {
+		height: 500px;
+		padding: 40px 0;
+	}
+	.ab-pronto__image {
+		background-size: 300px;
+	}
+	.ab-pronto__text {
+		padding: 0 20px 0 60px;
+	}
+	.ab-pronto__text-contenido {
+		font-size: 16px;
+	}
+}
+@media (max-width: 670px) and (min-width: 1px) {
+	.ab-essentials {
+		padding: 50px 0;
+	}
+	.ab-essentials__text {
+		font-size: 80px;
+		line-height: 65px;
+		max-width: 450px;
+	}
+	.ab-essentials__text-line1 {
+		margin-top: 6px;
+	}
+	.ab-essentials__text-line5 {
+		margin-top: 6px;
+	}
+	.ab-essentials__image {
+		width: 300px;
+		height: 2020px;
+	}
+	.ab-heisenberg {
+		display: block;
+		height: auto;
+	}
+	.ab-heisenberg__image {
+		img {
+			right: 0;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.ab-heisenberg__text {
+		max-width: 100%;
+		padding-top: 0;
+		padding-left: 20px;
+		padding-bottom: 30px;
+	}
+	.ab-heisenberg__text-titulo {
+		margin: 30px 0 10px 0;
+		font-size: 24px;
+	}
+	.ab-heisenberg__text-contenido {
+		font-size: 14px;
+	}
+	.ab-pronto {
+		flex-direction: column;
+		height: 600px;
+	}
+	.ab-pronto__text {
+		padding: 0 89px 0 84px;
+	}
+	.ab-pronto__text-titulo {
+		font-size: 24px;
+	}
+}
+@media (max-width: 1024px) and (min-width: 451px) {
+	.ab-pronto__image {
+		background-size: 300px;
+		flex-basis: 60%;
+	}
+}
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+	.ab-pronto {
+		padding: 90px 0;
+	}
+}
